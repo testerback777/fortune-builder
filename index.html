@@ -117,7 +117,7 @@
     </div>
     <span class="api-guide">키 발급 → <a href="https://aistudio.google.com" target="_blank" rel="noopener noreferrer">aistudio.google.com</a> · GitHub Pages에 올리면 API 키가 노출될 수 있으니 테스트용 키만 쓰세요</span>
     <div id="keySaved" class="key-saved">✓ 저장됨</div>
-    <div class="notice">현재 호출 모델은 <strong>gemini-2.5-flash</strong>로 설정되어 있습니다. Gemini API 공식 문서 기준으로 REST 예시는 <strong>v1beta generateContent</strong>와 <strong>system_instruction</strong> 필드를 사용합니다. citeturn632409view1turn529179view2</div>
+    <div class="notice">현재 호출 모델은 <strong>gemini-2.5-flash</strong>로 설정되어 있습니다. Gemini API 공식 문서 기준으로 REST 예시는 <strong>v1beta generateContent</strong>와 <strong>system_instruction</strong> 필드를 사용합니다.</div>
   </div>
 
   <hr class="divider">
@@ -179,8 +179,7 @@ const LENGTH_RULES = {
       '각 띠는 1~2문장.',
       '문장은 짧게 끊어서 작성.',
       '마무리 1문장으로 반드시 완성할 것.'
-    ].join('
-'),
+    ].join('\\n'),
     minChars: 170,
     retryMaxOutputTokens: 1500
   },
